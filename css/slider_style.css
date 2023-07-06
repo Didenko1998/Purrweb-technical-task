@@ -1,0 +1,142 @@
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    background-color: #3498db;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    background-color: #3498db;
+}
+
+
+.slider { 
+    margin-top: 100px;
+    background-color: #3498db;
+    position: relative;
+    z-index: 0;
+}
+.slider__wrapper { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background-color: #3498db;
+}
+.slider__wrapper-container {
+    width: 650px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #3498db;
+}
+
+.slider__wrapper-container-line {
+    width: 700px;
+    height: 200px;
+    background-color: #3498db;
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+.slide {
+    width: 276px;
+    position: absolute;
+    z-index: 2;
+    background-color: #3498db;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+}
+.slide__item-wrap {
+    width: 256px;
+    height: 200px;
+    background-color: #3498db;
+}
+.slider__item {
+    width: 650px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.slider__item-text {
+    font-size: 250%;
+    color: #3498db;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+}
+.slider__button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.slideBtn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3498db;
+}
+.slider__button-left-ico {
+    width: 30px;
+    height: 30px;
+}
+
+.slideBtn:hover {
+    background: #a29b9b;
+}
+
+.slider__button-right-ico {
+    width: 30px;
+    height: 30px;
+    transform: scale(-1, 1);
+}
+
+.dots__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.dot.active {
+    background-color: black;
+}
+span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: darkslategray;
+    margin-right: 30px;
+    cursor: pointer;
+}
+span:last-child {
+    margin-right: 0;
+}
+
+
+
